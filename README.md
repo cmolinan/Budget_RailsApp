@@ -116,9 +116,7 @@ To run the project, execute the following command:
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
-
-### 👤 **Author**
+## 👥 Author <a name="authors"></a>
 
 - GitHub: [Carlos Molina](https://github.com/cmolinan)
 - LinkedIn: [Carlos Molina](https://www.linkedin.com/in/carlosmolinan)
