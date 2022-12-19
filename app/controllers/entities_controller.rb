@@ -1,7 +1,5 @@
 class EntitiesController < ApplicationController
-  def index
-  end
+  def index; end
 
-  def new
-  end
+  def new; end
 end
