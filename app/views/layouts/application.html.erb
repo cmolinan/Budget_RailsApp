@@ -14,5 +14,16 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>
+    <div id="user_nav">
+    <% if current_user %>
+      Welcome!! Signed in as <%= current_user.name %>.
+      <button>
+        <%= link_to 'Sign Out', destroy_user_session_path, class: 'nav-link' %>
+      </button>
+      
+      
+
+    <% end %>
+  </div>        
   </body>
 </html>

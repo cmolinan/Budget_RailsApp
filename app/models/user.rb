@@ -7,4 +7,5 @@ class User < ApplicationRecord
   has_many :entities, dependent: :destroy
 
   validates :name, presence: true
+  validates :email, :password, presence: true
 end
