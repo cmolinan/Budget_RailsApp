@@ -150,7 +150,8 @@ If you like this project. Don't forget to give it a ⭐️
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-- A big thanks to [@microverseinc](https://github.com/microverseinc) for the project idea, guidance and inspiration.
+- This webpage is based on an original Behance design, posted by Gregoire Vella
+  https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

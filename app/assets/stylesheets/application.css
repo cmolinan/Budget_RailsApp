@@ -1,15 +1,192 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Proxima Nova', sans-serif;
+  font-style: normal;
+  font-size: 18px;
+}
+
+body {
+  background-color: beige;
+  padding: 5%;
+}
+
+html {
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.common_header {
+  margin: 5% auto;
+  text-align: center;
+}
+
+.common_header p {
+  margin: auto;
+  border: 1px solid black;
+  color: blue;
+  font-size: 20px;
+}
+
+.common_footer p {
+  color: rgb(103, 103, 143);
+  font-size: 12px;
+}
+
+.user_box {
+  display: flex;
+  align-items: center;
+}
+
+.user_bio {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  border: 1px solid black;
+  font-size: 14px;
+  margin: 1%;
+}
+
+.user_photo {
+  flex: 1;
+  border: 1px solid black;
+  margin: 1%;
+  text-align: center;
+  width: auto;
+  height: 60px;
+  align-items: center;
+}
+
+.user_namePost {
+  flex: 5;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  margin: 2% auto;
+  height: 60px;
+}
+
+.user_name {
+  justify-content: space-between;
+  padding: 2%;
+  padding-bottom: 0%;
+}
+
+.user_numOfPosts {
+  padding-right: 2%;
+  padding-bottom: 2%;
+  text-align: right;
+  font-size: 12px;
+}
+
+.user_button {
+  text-align: center;
+  justify-content: center;
+  font-size: 14px;
+  margin: auto;
+}
+
+.div-comments {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  border: 1px solid black;
+  margin: 1%;
+  margin-top: 0;
+  margin-bottom: 2%;
+}
+
+.comments {
+  font-size: 12px;
+  margin: 1%;
+}
+
+.post_header {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  border: 1px solid black;
+  font-size: 14px;
+  margin: 1%;
+  padding-left: 1%;
+  margin-top: 2%;
+}
+
+.post-show-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ps-name {
+  width: 50%;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.ps-counters {
+  width: 50%;
+  font-size: 12px;
+  text-align: right;
+  padding-top: 2%;
+  padding-right: 1%;
+  vertical-align: bottom;
+}
+
+.ps-counters1 {
+  width: 100%;
+  font-size: 12px;
+  text-align: right;
+  padding-top: 2%;
+  padding-right: 1%;
+  vertical-align: bottom;
+}
+
+.flash_notice {
+  border: 1px solid black;
+  background-color: green;
+  color: white;
+}
+
+.flash_alert {
+  border: 1px solid black;
+  background-color: red;
+  color: white;
+}
+
+.login_box {
+  display: flex;
+  margin: 1% auto;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+}
+
+.box {
+  margin: 5%;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.login {
+  display: flex;
+  border: 1px solid black;
+  text-align: center;
+  width: 65%;
+  margin: 1% auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.btn-login {
+  width: 100%;
+}
