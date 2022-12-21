@@ -2,16 +2,12 @@
   <div class= 'screen-categories'>
     <% $context = 'CATEGORIES' %>
     <%if (@groups.any?)%>
-      <div class='category-over_ul'>
-        <ul class='category-list'>
-          <% @groups.each do |group| %>
-              <li>
-                  <%= link_to group_entities_path(group.id) do %>
-                  <%= render partial: "shared/group", locals: { group: group } %>
-                  <% end %>
-              </li>      
+      <div class='category-list'>        
+        <% @groups.each do |group| %>
+          <%= link_to group_entities_path(group.id) do %>
+          <%= render partial: "shared/group", locals: { group: group } %>
           <% end %>
-        </ul>
+        <% end %>
       </div>
     <% else %>
       <h3>'No categories yet. Please, add one.'</h3>
