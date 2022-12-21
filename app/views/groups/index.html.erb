@@ -1,7 +1,23 @@
 <div class='main-container'>
   <div class= 'screen-categories'>
-  <% $context = 'CATEGORIES' %>
-  <p>Find me in app/views/groups/index.html.erb</p>
+    <% $context = 'CATEGORIES' %>
+    <%if (@groups.any?)%>
+      <div>
+        <ul class='category-list'>
+          <% @groups.each do |group| %>
+              <li>
+                  <%= link_to group_entities_path(group.id) do %>
+                  <%= render partial: "shared/group", locals: { group: group } %>
+                  <% end %>
+              </li>      
+          <% end %>
+        </ul>
+      </div>
+    <% else %>
+      <h3>'No categories yet. Please, add one.'</h3>
+    <% end %>
+    <br>
+    <%= link_to "Add Category", new_group_path, class:'category-add'%>
+
   </div>
 </div>
-
