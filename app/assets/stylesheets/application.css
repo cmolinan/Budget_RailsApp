@@ -65,3 +65,73 @@ html {
   background-color: red;
   color: white;
 }
+
+.category-entitie {
+  width: 90%;
+  /* grid-template-columns: 50% 50%; */
+  display: flex;
+  padding: 5px;
+  border: 1px solid grey;
+}
+
+.category-image {
+  flex: 1;
+  padding-left: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.category-image img {
+  width: 40px;
+}
+
+.category-name {
+  flex: 1;
+}
+
+.category-img {
+  flex: 1;
+}
+
+.category-info {
+  flex: 1;
+  font-weight: bold;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+ul {
+  padding-inline-start: 0;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.category-over_ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category-list {
+  width: 90%;
+}
+
+.category-list > li {
+  list-style: none;
+  margin: 10px 0;
+  border: 1px black;
+  border-radius: 3px;
+}
+
+.category-add {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
