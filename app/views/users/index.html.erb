@@ -1,3 +1,13 @@
-<% if user_signed_in? %>
-  <p class='alert'>Welcome <%= current_user.name%></p>
-<% end %>
+<div class='container' >
+  <% $context = 'HOME' %>
+  <div class='screen-splash'>
+    <br><br>
+    <h4>Budget App by Carlos</h4><br><br>
+    <img class="splash-image" src="<%= image_path("budget-logo.png") %>" alt="splash_logo"/> <br><br>
+
+    
+    <%= link_to 'Sign In', new_user_session_path, class: 'nav-link' %>
+    <%= link_to 'Register', new_user_registration_path, class: 'nav-link' %>
+    <br><br>
+  </div>
+</div>

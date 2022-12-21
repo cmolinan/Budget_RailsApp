@@ -1,0 +1,13 @@
+<div id="footer">
+  <br>
+  <% if current_user %>
+    Signed in as <%= current_user.name %><br>
+  
+    <button>    
+      <%= link_to 'Sign Out', destroy_user_session_path, class: 'nav-link' %>
+    </button>
+  <% end %>
+  <p class="flash-notice"><%= notice %></p>
+  <p class="flash-alert"><%= alert %></p>  
+</div>
+
