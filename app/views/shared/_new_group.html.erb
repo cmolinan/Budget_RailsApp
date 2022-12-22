@@ -1,5 +1,5 @@
-<div class='container' >
-  <div class='loginForm-add-new-category'>
+
+
     <%= form_with(model: @group) do |f| %>
       <div><%= f.text_field :name, value: @group.name, placeholder: "Select Category Name", required: true%> </div><br>
                   
@@ -11,6 +11,6 @@
       <br>
       <%= f.submit "Save Category", class: 'add-button'%>
     <% end %> 
-  </div>
-  <br><%= link_to "Cancel", :back %>
-</div>
+
+  <br><%= link_to "Cancel", :back %><br>
+

@@ -6,7 +6,7 @@
   </div>
   <div class='category-info'>
     <div>Total: </div>
-    <div>$12.30</div>
+    <div>$<%= number_with_precision(group.total_amount, precision: 2) %></div>
     <% if false %>
       <div>$<%= group.sum_total %> </div>
     <% end %>

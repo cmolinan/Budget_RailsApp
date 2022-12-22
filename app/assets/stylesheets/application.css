@@ -11,10 +11,11 @@
 }
 
 body {
-  background-color: white;
+  background-color: var(--background);
 
   --foreg: #3979c3;
   --hover: #083c77;
+  --background: #f1f1f1;
 }
 
 html {
@@ -34,20 +35,35 @@ html {
   padding-top: 0;
   text-align: center;
   color: var(--foreg);
+  border: 1px solid grey;
+  width: 98%;
+  margin: auto;
 }
 
 .screen-splash,
 .screen-login,
 .screen-signup,
 .screen-categories,
-.screen-add-category {
-  color: #2d2d2d;
+.screen-transactions,
+.screen-add-transaction {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  border: 1px solid #2d2d2d;
   justify-content: center;
   align-items: center;
+}
+
+.screen-add-category,
+.screen-add-transaction {
+  width: 80%;
+  margin: 5% auto;
+  padding: 5%;
+  border: 1px solid grey;
+  background: white;
+}
+
+.screen-splash {
+  text-align: center;
+  background-color: white;
 }
 
 .splash-image {
@@ -71,6 +87,7 @@ html {
   color: white;
 }
 
+/* Categories  */
 .category-list {
   display: flex;
   flex-direction: column;
@@ -93,8 +110,7 @@ html {
 }
 
 .category-list a:hover {
-  background: var(--foreg);
-  color: whitesmoke;
+  color: blue;
 }
 
 .category-entitie {
@@ -106,6 +122,7 @@ html {
   border: 1px solid grey;
   justify-content: center;
   gap: 5%;
+  background-color: white;
 }
 
 .category-image {
@@ -150,4 +167,46 @@ html {
   padding: 10px;
   justify-content: center;
   align-items: center;
+}
+
+/* Transactions  */
+
+.transaction-container {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.transaction-detail-container {
+  display: flex;
+  flex-direction: column;
+  width: 95vw;
+  max-width: 456px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+  background-color: white;
+}
+
+.title-transaction {
+  font-size: large;
+  font-weight: bold;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.item-transaction {
+  margin-top: 3px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.item-amount {
+  text-align: right;
 }

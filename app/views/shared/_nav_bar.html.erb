@@ -11,6 +11,9 @@
 
     <div id="myLinks">    
     <% if $context != 'LOGIN' %>
+
+      <%= link_to 'Home', users_path %>        
+
       <% if $context != 'CATEGORIES' %>         
         <%= link_to 'Categories', groups_path %>
       <% end %>
