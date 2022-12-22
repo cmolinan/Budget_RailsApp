@@ -7,8 +7,6 @@ class GroupsController < ApplicationController
 
   def new
     @group = Group.new
-    ## @icons = { id: ['house', 'food', 'education.png', 'health.png', 'transportation.png', 'clothes.png', 'fun.png', 'other.png']}
-    ## @icons = { id:  [ { name: 'house' }, { name: 'education.png' } ] }
     @icons = User.all
   end
 

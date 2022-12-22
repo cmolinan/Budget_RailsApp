@@ -8,7 +8,7 @@ module GroupsHelper
       ['Health', 'health.png'],
       ['House', 'house.png'],
       ['Others', 'others.png'],
-      ['Transport', 'transportation.png']      
+      ['Transport', 'transportation.png']
     ]
   end
 end

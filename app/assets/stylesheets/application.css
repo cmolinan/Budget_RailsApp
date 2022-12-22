@@ -33,7 +33,7 @@ html {
   padding: 1%;
   padding-top: 0;
   text-align: center;
-  color: var(--foreg);  
+  color: var(--foreg);
 }
 
 .screen-splash,
@@ -95,7 +95,6 @@ html {
 .category-list a:hover {
   background: var(--foreg);
   color: whitesmoke;
-
 }
 
 .category-entitie {
