@@ -8,5 +8,4 @@ class Group < ApplicationRecord
   def total_amount
     entities.sum(:amount)
   end
-
 end

@@ -16,7 +16,7 @@ body {
   --foreg: #3979c3;
   --hover: #083c77;
   --background: #f1f1f1;
-  }
+}
 
 html {
   /* For mobile */
@@ -110,7 +110,6 @@ html {
 }
 
 .category-list a:hover {
-  
   color: blue;
 }
 
@@ -192,7 +191,6 @@ html {
   border: 1px solid grey;
   background-color: white;
 }
-
 
 .title-transaction {
   font-size: large;
