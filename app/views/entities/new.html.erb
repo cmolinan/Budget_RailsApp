@@ -1,2 +1,29 @@
-<h1>Entities#new</h1>
-<p>Find me in app/views/entities/new.html.erb</p>
+<div class='main-container' >
+  <div class='screen-add-transaction'>
+      <% $context = 'ADD TRANSACTION' %>
+       <br>
+
+      <%= form_with model: @entity, url: group_entities_path  do |f|%>
+
+        <div class="form_inputs">
+          <div>
+            Category: <%= @group.name %><br><br>
+          </div>
+
+          <div>
+            <%= f.text_field :name, required: true, placeholder: "Name of Transaction"%>
+          </div>
+          <br>
+          <div> 
+            <%= f.number_field :amount, step:0.01, required: true, placeholder: "Amount"%>
+          </div>
+
+        </div>
+        <br>
+        <%= f.submit "Add New Transaction", class: "add-button"%>
+        <% end %>
+        <br>
+        <%= link_to "Cancel", group_entities_path %>
+        <br>
+  </div>
+</div>

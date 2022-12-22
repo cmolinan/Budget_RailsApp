@@ -5,7 +5,7 @@
       <div class='transaction-container'>
         <%= render partial: "shared/group", locals: { group: group } %>
       </div>
-      <div class='transaction-container'>
+      <div class='transaction-detail-container'>
         <div class='title-transaction'>
           <span>Items</span>
           <span class='item-amount'>Amount</span>
@@ -19,7 +19,9 @@
         </div>
         <br>
         <%= button_to link_to "New Transaction", new_group_entity_path(group) %>
-
+        <br>
+        <br>
+        <%= link_to "Back", groups_path %>        
     <% end %>
   </div>
 </div>
