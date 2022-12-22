@@ -33,13 +33,14 @@ html {
   padding: 1%;
   padding-top: 0;
   text-align: center;
-  color: var(--foreg);
+  color: var(--foreg);  
 }
 
 .screen-splash,
 .screen-login,
 .screen-signup,
-.screen-categories {
+.screen-categories,
+.screen-add-category {
   color: #2d2d2d;
   display: flex;
   flex-direction: column;
@@ -99,6 +100,7 @@ html {
 
 .category-entitie {
   width: 95vw;
+  max-width: 456px;
   display: flex;
   padding: 5px 2px;
   margin: 0.5% 0;

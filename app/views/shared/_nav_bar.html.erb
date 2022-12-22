@@ -8,11 +8,25 @@
     </a>
   </div>
     <!-- Navigation links (hidden by default) -->
-  <div id="myLinks">
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-  </div>
+
+    <div id="myLinks">    
+    <% if $context != 'LOGIN' %>
+      <% if $context != 'CATEGORIES' %>         
+        <%= link_to 'Categories', groups_path %>
+      <% end %>
+
+      <% if $context === 'CATEGORIES'  %>         
+        <%= link_to 'Add Category', new_group_path %>
+      <% end %>
+      
+      <%= link_to 'Sign Out', destroy_user_session_path %>        
+    
+    <% else %>
+      <%= link_to 'Sign Up', new_user_registration_path %>        
+    <% end %>
+    </div>
+  
+
 
   <div id='navTitle'>
     <a href="#home" class="active"><%= $context %></a>
