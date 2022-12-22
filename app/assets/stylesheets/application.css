@@ -12,6 +12,9 @@
 
 body {
   background-color: white;
+
+  --foreg: #3979c3;
+  --hover: #083c77;
 }
 
 html {
@@ -30,12 +33,14 @@ html {
   padding: 1%;
   padding-top: 0;
   text-align: center;
+  color: var(--foreg);
 }
 
 .screen-splash,
 .screen-login,
 .screen-signup,
-.screen-categories {
+.screen-categories,
+.screen-add-category {
   color: #2d2d2d;
   display: flex;
   flex-direction: column;
@@ -64,4 +69,85 @@ html {
   border: 1px solid black;
   background-color: red;
   color: white;
+}
+
+.category-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.category-list a {
+  text-decoration: none;
+}
+
+.category-list a:link {
+  color: var(--foreg);
+}
+
+.category-list a:visited {
+  color: var(--foreg);
+}
+
+.category-list a:hover {
+  background: var(--foreg);
+  color: whitesmoke;
+}
+
+.category-entitie {
+  width: 95vw;
+  max-width: 456px;
+  display: flex;
+  padding: 5px 2px;
+  margin: 0.5% 0;
+  border: 1px solid grey;
+  justify-content: center;
+  gap: 5%;
+}
+
+.category-image {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category-image img {
+  width: 40px;
+}
+
+.category-name {
+  flex: 1;
+  font-size: 18px;
+  text-align: left;
+  padding-left: 2px;
+}
+
+.category-img {
+  flex: 2;
+}
+
+.category-info {
+  flex: 1;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.category-info p {
+  font-size: 18px;
+}
+
+.category-add {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
 }

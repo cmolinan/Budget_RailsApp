@@ -1,0 +1,14 @@
+
+<div class='category-entitie'>
+  <div class='category-image'>
+      <div class='category-name'><%= group.name %></div> 
+      <div class='category-img'><img src='<%= image_path(group.icon) %>' alt='<%= group.name %>'/></div>
+  </div>
+  <div class='category-info'>
+    <div>Total: </div>
+    <div>$12.30</div>
+    <% if false %>
+      <div>$<%= group.sum_total %> </div>
+    <% end %>
+  </div>
+</div>

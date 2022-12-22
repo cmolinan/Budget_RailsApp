@@ -1,2 +1,8 @@
-<h1>Groups#new</h1>
-<p>Find me in app/views/groups/new.html.erb</p>
+<div class='main-container' >
+  <div class='screen-add-category'>
+    <% $context = 'ADD CATEGORY' %>  
+      <br>
+      <%= render partial: "shared/new_group", group: @group %>
+      <br>
+  </div>
+</div>
