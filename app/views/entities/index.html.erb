@@ -1,4 +1,25 @@
-<div class='main-container'>
-  <h1>Entities#index</h1>
-  <p>Find me in app/views/entities/index.html.erb</p>
+<div class='main-container' >
+  <div class='screen-transactions'>
+  <% $context = 'TRANSACTIONS' %>
+    <% @group.each do |group| %>
+      <div class='transaction-container'>
+        <%= render partial: "shared/group", locals: { group: group } %>
+      </div>
+      <div class='transaction-container'>
+        <div class='title-transaction'>
+          <span>Items</span>
+          <span class='item-amount'>Amount</span>
+        </div>
+        <% group.entities.order("created_at DESC").each do |t| %>
+            <div class="item-transaction">
+              <div><%= t.name %></div>
+              <div class='item-amount'>$<%= number_with_precision(t.amount, precision: 2) %></div>
+            </div>
+          <% end %>
+        </div>
+        <br>
+        <%= button_to link_to "New Transaction", new_group_entity_path(group) %>
+
+    <% end %>
+  </div>
 </div>
