@@ -14,5 +14,5 @@ default: &default
 #   database: mysite_test
 
 production:
-    <<: *default
+  <<: *default
   url: <%= ENV['DATABASE_URL'] %>
