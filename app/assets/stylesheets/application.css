@@ -263,7 +263,6 @@ html {
   padding: 10px;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid grey; */
 }
 
 .title-transaction {
@@ -279,8 +278,6 @@ html {
   flex-direction: row;
   margin: 1%;
   width: 95%;
-  /* display: grid;
-  grid-template-columns: 50% 50%; */
   border: 1px solid grey;
   align-items: center;
   background-color: white;
