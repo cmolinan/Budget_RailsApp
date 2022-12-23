@@ -67,9 +67,25 @@
   </ul>
 </details>
 
+
+<br>
+
+## Video Presentation 
+[Video Demo Link](https://drive.google.com/drive/u/0/folders/1BUFwAkKcI3iUr-kRtgKTpWBJNlCVFNui)
+<br><br>
+## Live Demo (Render.com)
+[Live Demo Link](https://my-budget-in-rails.onrender.com)
+
+<br>
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
+
+- Allows register of new users and log in, so that the data is private to them.
+- Allows the creation of categories of expenses by user.
+- Allows the introduce of transactions associated with a category.
+- It's possible to see the money spent on each category
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -101,19 +117,28 @@ Install this project with the steps below:
 
 - After cloning type `cd Budget_RailsApp` to access the project on the terminal.
 - Run `bundle install` to install all the required dependancies.
-- Create Database with `rails db:create`
-- Migrate Database with `rails db:migrate`
-- Populate data with `rails db:seed`
+- Run `npm install` to install other required dependancies.
+- For developmente environment:
+  - Create Database with `rails db:create`
+  - Migrate Database with `rails db:migrate`
+  - Populate data with `rails db:seed`
+
+- For testing porpouses:
+  - Create Database with `rails  db:create RAILS_ENV=test`
+  - Migrate Database with `rails db:migrate RAILS_ENV=test`
 
 ### Usage
 
 To run the project, execute the following command:
-
 - Run `rails s` to start a development server.
 - Use any of this users to log-in:
     - e-mail:  `tom@m.com` /  password: `666666`
-    - e-mail:  `lilly@m.com` / password: `666666`
+    - e-mail:  `mark@m.com` / password: `666666`
 
+To run the tests of the project, execute the following command:
+- Run `rspec` to start the tests
+
+<br>
 <!-- AUTHORS -->
 
 ## 👥 Author <a name="authors"></a>
