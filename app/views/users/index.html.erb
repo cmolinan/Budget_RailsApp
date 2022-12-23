@@ -3,12 +3,12 @@
   <div class='screen-splash'>
     <br><br>
     <b><p>Budget App by <u>CarlosMolina</u> ©2022</b><br><br><br>
-    <img class="splash-image" src="<%= image_path("budget-logo.png") %>" alt="splash_logo"/> <br><br>
+    <img class="splash-image" src="<%= image_path("budget-logo.png") %>" alt="splash_logo"/> <br><br><br>
 
     <% if !current_user %>
-      <%= link_to 'Sign In', new_user_session_path, class: 'nav-link' %>
+      <%= link_to 'Sign In', new_user_session_path, class: 'nav-link' %><br><br>
       <%= link_to 'Register', new_user_registration_path, class: 'nav-link' %>
     <% end %>
-    <br><br>
+    <br>
   </div>
 </div>

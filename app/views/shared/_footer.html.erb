@@ -1,13 +1,49 @@
-<div id="footer">
-  <br>
+<div style="
+  text-align: left;
+  color: blue;
+  padding-left: 2%;
+"
+>
   <% if current_user %>
     Signed in as <%= current_user.name %><br>
   
-    <button>    
-      <%= link_to 'Sign Out', destroy_user_session_path, class: 'nav-link' %>
-    </button>
   <% end %>
-  <p class="flash-notice"><%= notice %></p>
-  <p class="flash-alert"><%= alert %></p>  
 </div>
+
+<% if $context === 'TRANSACTIONS' %>
+  <div style="
+    text-align: center;
+    padding-left: 2%;
+    background-color: #60b524;
+    height: 70px;
+    width: 98vw;
+    max-width: 460px;
+    margin: auto;
+    
+    display: flex;
+    justify-content: center;
+    align-content: center:
+    
+  "
+  >
+    <div style="
+      display: flex;   
+      height: 50px;
+      width: 88vw;
+      justify-content: center;
+      align-items: center;
+      max-width: 460px;
+      margin: auto;
+      color: white;
+      background-color: #60b524;
+      border: 1px solid white;
+    "
+    >
+    SCAN
+    </div>
+  </div>
+<% end %>
+
+<p class="flash-notice"><%= notice %></p>
+<p class="flash-alert"><%= alert %></p>  
 

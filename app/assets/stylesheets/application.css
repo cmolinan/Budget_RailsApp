@@ -1,5 +1,5 @@
-@import './navbar.css';
 @import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 
 * {
   margin: 0;
@@ -12,6 +12,7 @@
 
 body {
   background-color: var(--background);
+  border: 1px solid rgb(204, 198, 198);
 
   --foreg: #3979c3;
   --hover: #083c77;
@@ -22,9 +23,87 @@ html {
   /* For mobile */
   max-width: 480px;
   margin: auto;
-  height: 500px;
-  border-radius: 10px;
+  height: 100vh;
+  max-height: 480px;
+  border-radius: 3px;
 }
+
+/* -----Category partials due linter recommendation  ---- */
+.category-list a {
+  text-decoration: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.category-list a:link {
+  color: var(--foreg);
+}
+
+.category-list a:visited {
+  color: var(--foreg);
+}
+
+.category-list a:hover {
+  color: blue;
+}
+
+/* -----NAVBAR  ---- */
+.topnav {
+  overflow: hidden;
+  background-color: var(--foreg);
+  position: relative;
+  margin: 0 1%;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+  padding-top: 15%;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: var(--foreg);
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: var(--hover);
+  color: white;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  margin-left: 35%;
+  background-color: var(--foreg);
+  color: white;
+}
+
+#navTitle a:hover {
+  display: block;
+  background-color: var(--foreg);
+}
+
+.topnav #myLinks a {
+  background-color: var(--foreg);
+}
+
+.topnav #myLinks a:hover {
+  background-color: var(--hover);
+}
+
+/* -----App Common  ---- */
 
 .main-container {
   display: flex;
@@ -64,15 +143,13 @@ html {
 .screen-splash {
   text-align: center;
   background-color: white;
+  height: 100vh;
+  max-height: 480px;
 }
 
 .splash-image {
-  height: 50%;
+  height: auto;
   width: 50%;
-}
-
-.footer a {
-  text-align: center;
 }
 
 .flash_notice {
@@ -97,24 +174,8 @@ html {
   text-align: center;
 }
 
-.category-list a {
-  text-decoration: none;
-}
-
-.category-list a:link {
-  color: var(--foreg);
-}
-
-.category-list a:visited {
-  color: var(--foreg);
-}
-
-.category-list a:hover {
-  color: blue;
-}
-
 .category-entitie {
-  width: 95vw;
+  width: 90vw;
   max-width: 456px;
   display: flex;
   padding: 5px 2px;
@@ -123,6 +184,7 @@ html {
   justify-content: center;
   gap: 5%;
   background-color: white;
+  text-align: center;
 }
 
 .category-image {
@@ -138,7 +200,7 @@ html {
 }
 
 .category-name {
-  flex: 1;
+  flex: 2.5;
   font-size: 18px;
   text-align: left;
   padding-left: 2px;
@@ -169,6 +231,19 @@ html {
   align-items: center;
 }
 
+.category-add-button {
+  color: var(--foreg);
+  font-size: 20px;
+}
+
+.category-add-button:hover {
+  color: var(--hover);
+}
+
+.category-add-icon {
+  color: grey;
+}
+
 /* Transactions  */
 
 .transaction-container {
@@ -188,8 +263,6 @@ html {
   padding: 10px;
   justify-content: center;
   align-items: center;
-  border: 1px solid grey;
-  background-color: white;
 }
 
 .title-transaction {
@@ -201,12 +274,44 @@ html {
 }
 
 .item-transaction {
-  margin-top: 3px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
+  flex-direction: row;
+  margin: 1%;
+  width: 95%;
+  border: 1px solid grey;
+  align-items: center;
+  background-color: white;
+}
+
+.item-img {
+  flex: 1;
+}
+
+.item-img img {
+  width: 25px;
+}
+
+.item-data {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 10px;
 }
 
 .item-amount {
   text-align: right;
+  font-weight: 700;
+}
+
+.item-upper {
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.item-date {
+  font-size: 12px;
 }

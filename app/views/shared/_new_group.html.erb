@@ -5,11 +5,11 @@
                   
       <div>
         <%= f.label :icon, 'Select Icon:' %>
-        <%= f.select(:icon, options_for_select(list_icons), {}, { class: "icon" }) %>
+        <%= f.select(:icon, options_for_select(list_icons), {}, { class: "category-add-icon" }) %>
       </div>
           
       <br>
-      <%= f.submit "Save Category", class: 'add-button'%>
+      <%= f.submit "Save Category", class: 'category-add-button'%>
     <% end %> 
 
   <br><%= link_to "Cancel", :back %><br>
