@@ -174,7 +174,7 @@ html {
 }
 
 .category-entitie {
-  width: 95vw;
+  width: 90vw;
   max-width: 456px;
   display: flex;
   padding: 5px 2px;
@@ -199,7 +199,7 @@ html {
 }
 
 .category-name {
-  flex: 1;
+  flex: 2.5;
   font-size: 18px;
   text-align: left;
   padding-left: 2px;
@@ -262,8 +262,7 @@ html {
   padding: 10px;
   justify-content: center;
   align-items: center;
-  border: 1px solid grey;
-  background-color: white;
+  /* border: 1px solid grey; */
 }
 
 .title-transaction {
@@ -275,12 +274,46 @@ html {
 }
 
 .item-transaction {
-  margin-top: 3px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
+  flex-direction: row;
+  margin: 1%;
+  width: 95%;
+  /* display: grid;
+  grid-template-columns: 50% 50%; */
+  border: 1px solid grey;
+  align-items: center;
+  background-color: white;
+}
+
+.item-img {
+  flex: 1;
+}
+
+.item-img img {
+  width: 25px;
+}
+
+.item-data {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 10px;
 }
 
 .item-amount {
   text-align: right;
+  font-weight: 700;
+}
+
+.item-upper {
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.item-date {
+  font-size: 12px;
 }
