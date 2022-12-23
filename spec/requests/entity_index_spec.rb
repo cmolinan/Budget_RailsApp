@@ -9,12 +9,12 @@ RSpec.describe 'Entity Index Page', type: :feature do
     fill_in 'Email', with: @user.email
     fill_in 'Password', with: @user.password
     click_button 'Log in'
-    sleep 1
+    sleep 2
     click_link 'Education'
   end
 
   it 'Renders the Transactions index Page' do
-    sleep(3)
+    sleep(4)
     expect(current_path).to have_content('/entities')
   end
 
