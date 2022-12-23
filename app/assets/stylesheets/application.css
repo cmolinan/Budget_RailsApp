@@ -1,4 +1,3 @@
-@import './navbar.css';
 @import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
 
 * {
@@ -24,6 +23,15 @@ html {
   margin: auto;
   height: 500px;
   border-radius: 10px;
+}
+
+/* FOR NAVBAR -- Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
 }
 
 .main-container {
@@ -209,4 +217,56 @@ html {
 
 .item-amount {
   text-align: right;
+}
+
+/* -----NAVBAR ---------- */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+.topnav {
+  overflow: hidden;
+  background-color: var(--foreg);
+  position: relative;
+  margin: 0 1%;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+  padding-top: 15%;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: var(--foreg);
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: var(--hover);
+  color: white;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  margin-left: 35%;
+  background-color: var(--foreg);
+  color: white;
+}
+
+#navTitle a:hover {
+  display: block;
+  background-color: var(--foreg);
+}
+
+.topnav #myLinks a {
+  background-color: var(--foreg);
+}
+
+.topnav #myLinks a:hover {
+  background-color: var(--hover);
 }
