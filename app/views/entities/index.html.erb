@@ -20,8 +20,10 @@
         <br>
         <%= button_to link_to "New Transaction", new_group_entity_path(group) %>
         <br>
+        <%= link_to groups_path do %>
+          <img src='<%= image_path("less-than.png") %>' alt='back'/>
+        <% end %>
         <br>
-        <%= link_to "Back", groups_path %>        
     <% end %>
   </div>
 </div>

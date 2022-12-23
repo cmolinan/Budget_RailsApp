@@ -12,7 +12,8 @@
 
 body {
   background-color: var(--background);
-  border: 1px solid red;
+  border: 1px solid rgb(204, 198, 198);
+
   --foreg: #3979c3;
   --hover: #083c77;
   --background: #f1f1f1;
@@ -24,8 +25,33 @@ html {
   margin: auto;
   height: 100vh;
   max-height: 480px;
-  
   border-radius: 3px;
+}
+
+/* -----Category partials due linter recommendation  ---- */
+.category-list a {
+  text-decoration: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.category-list a:link {
+  color: var(--foreg);
+}
+
+.category-list a:visited {
+  color: var(--foreg);
+}
+
+.category-list a:hover {
+  color: blue;
 }
 
 /* -----NAVBAR  ---- */
@@ -40,15 +66,6 @@ html {
 .topnav #myLinks {
   display: none;
   padding-top: 15%;
-}
-
-/* Style navigation menu links */
-.topnav a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
 }
 
 /* Style the hamburger menu */
@@ -156,22 +173,6 @@ html {
   text-align: center;
 }
 
-.category-list a {
-  text-decoration: none;
-}
-
-.category-list a:link {
-  color: var(--foreg);
-}
-
-.category-list a:visited {
-  color: var(--foreg);
-}
-
-.category-list a:hover {
-  color: blue;
-}
-
 .category-entitie {
   width: 95vw;
   max-width: 456px;
@@ -182,6 +183,7 @@ html {
   justify-content: center;
   gap: 5%;
   background-color: white;
+  text-align: center;
 }
 
 .category-image {
@@ -226,6 +228,19 @@ html {
   padding: 10px;
   justify-content: center;
   align-items: center;
+}
+
+.category-add-button {
+  color: var(--foreg);
+  font-size: 20px;
+}
+
+.category-add-button:hover {
+  color: var(--hover);
+}
+
+.category-add-icon {
+  color: grey;
 }
 
 /* Transactions  */
