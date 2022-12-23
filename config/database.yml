@@ -5,13 +5,13 @@ default: &default
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
  
-development:
-  <<: *default
-  database: mysite_development
+# development:
+#   <<: *default
+#   database: mysite_development
 
-test:
-  <<: *default
-  database: mysite_test
+# test:
+#   <<: *default
+#   database: mysite_test
 
 production:
     <<: *default
