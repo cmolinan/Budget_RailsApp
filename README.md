@@ -71,7 +71,7 @@
 <br>
 
 ## Video Presentation 
-[Video Demo Link](https://drive.google.com/drive/u/0/folders/1BUFwAkKcI3iUr-kRtgKTpWBJNlCVFNui)
+[Video Demo Link](https://www.youtube.com/watch?v=n6GPRfV79Vo)
 <br><br>
 ## Live Demo (Render.com)
 [Live Demo Link](https://my-budget-in-rails.onrender.com)
