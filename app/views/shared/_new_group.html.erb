@@ -1,0 +1,16 @@
+
+
+    <%= form_with(model: @group) do |f| %>
+      <div><%= f.text_field :name, value: @group.name, placeholder: "Select Category Name", required: true%> </div><br>
+                  
+      <div>
+        <%= f.label :icon, 'Select Icon:' %>
+        <%= f.select(:icon, options_for_select(list_icons), {}, { class: "category-add-icon" }) %>
+      </div>
+          
+      <br>
+      <%= f.submit "Save Category", class: 'category-add-button'%>
+    <% end %> 
+
+  <br><%= link_to "Cancel", :back %><br>
+
